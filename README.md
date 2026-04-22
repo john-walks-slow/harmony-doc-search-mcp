@@ -20,7 +20,9 @@
     "harmony-doc-search": {
       "command": "uvx",
       "args": [
-        "git+https://github.com/john-walks-slow/harmony-doc-search-mcp@main"
+        "--from",
+        "git+https://github.com/john-walks-slow/harmony-doc-search-mcp@main",
+        "harmony-doc-search-mcp"
       ],
       "env": {
         "HARMONY_DOC_VERIFY_SSL": "false"
