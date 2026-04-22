@@ -21,7 +21,10 @@
       "command": "uvx",
       "args": [
         "git+https://github.com/john-walks-slow/harmony-doc-search-mcp@main"
-      ]
+      ],
+      "env": {
+        "HARMONY_DOC_VERIFY_SSL": "false"
+      }
     }
   }
 }
@@ -31,13 +34,13 @@
 
 | 变量名 | 默认值 | 说明 |
 |---|---:|---|
-| `HARMONY_DOC_LANGUAGE` | `zh` | 接口语言 |
-| `HARMONY_DOC_COUNTRY` | `CN` | 国家/地区 |
-| `HARMONY_DOC_DEVICE_ID` | `ESN` | 请求参数中的 deviceId |
-| `HARMONY_DOC_DEVICE_TYPE` | `1` | 请求参数中的 deviceType |
 | `HARMONY_DOC_VERIFY_SSL` | `true` | 是否校验证书 |
 | `LOG_LEVEL` | `INFO` | 日志级别 |
 | `HTTPS_PROXY` / `HTTP_PROXY` | 空 | HTTP 代理 |
+| `HARMONY_DOC_LANGUAGE` | `zh` | 查询语言 |
+| `HARMONY_DOC_COUNTRY` | `CN` | 国家/地区 |
+| `HARMONY_DOC_DEVICE_ID` | `ESN` | 请求参数中的 deviceId，一般无需修改 |
+| `HARMONY_DOC_DEVICE_TYPE` | `1` | 请求参数中的 deviceType，一般无需修改 |
 
 ## 开发
 
